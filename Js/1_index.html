@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1" onclick="Alerta()">Olá!</button>
+    <button id="btn2" onclick="Soma()">Somar</button>
+    <!-- <button id="btn2" onclick="addlink()">Link na tela</button> -->
+    <button id="btn2" onclick="firula()">Firular tela</button>
+    <button id="btn2" onclick="firulaborda()">Firula da borda</button>
+    <div id="bloco1" style="width: 100%; height: 200px;border-radius: 10px"></div>
+       
+     
+    <script>
+        var nome = "Usuario";
+        var num1 = 10;
+        var num2 = 32;
+        console.log(`Site iniciado, Bem vindo ${nome}`);
+       
+        function Alerta()
+        {
+            alert("Quer ver algo legal?");
+            addlink();
+        }
+        function Soma()
+        {
+            console.log(num1 + num2);
+        }
+        function firula()
+        {
+            let element = document.getElementById("bloco1");
+            element.style.background = "#FA8072"
+        }
+        function firulaborda()
+        {
+            let element = document.getElementById("bloco1");
+            element.style.border = "2px solid #4B0082"
+        }
+        function addlink()
+        {
+            let element = document.getElementById("bloco1");
+            element.innerHTML = "<a href='https://youtu.be/dQw4w9WgXcQ'>Clique aqui</a>"
+        }
+    </script>
+</body>
+</html>
