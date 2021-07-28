@@ -7,18 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn1" onclick="Alerta()">Olá!</button>
-    <button id="btn2" onclick="Soma()">Somar</button>
-    <button id="btn2" onclick="firula()">Firular tela</button>
-    <button id="btn2" onclick="firulaborda()">Firula da borda</button>
+    <button id="btn1" onclick="Alerta()">Olá!</button><br>
+    <button id="btn2" onclick="firula()">Firular tela</button><br>
+    <button id="btn2" onclick="firulaborda()">Firula da borda</button></br>
     <div id="bloco1" style="width: 100%; height: 200px;border-radius: 10px"></div>
+    <button id="btn2" onclick="Soma()">Somar</button>
        
      
     <script>
         var nome = "Usuario";
-        var num1 = 10;
-        var num2 = 32;
         console.log(`Site iniciado, Bem vindo ${nome}`);
+        const num1 = parseInt(input(`Valor 1`));
+        const num2 = parseInt(input(`Valor 2`));
        
         function Alerta()
         {
@@ -27,6 +27,7 @@
         }
         function Soma()
         {
+            const soma = num1 +num2;
             console.log(num1 + num2);
         }
         function firula()
