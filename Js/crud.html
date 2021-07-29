@@ -6,29 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="text-align:center;">
 
     <h1>Cadastro de categorias</h1>
     <label for="id">Id</label><input type="number" name="id" id="id"/> <br/>
     <label for="nome">Nome</label><input type="text" name="nome" id="nome"/> <br/>
     <label for="descricao">Descrição</label><input type="text" name="descricao" id="descricao"/> <br/>
-    <button onclick="Salvar()">Salvar</button>
+    <button onclick="salvar()">Salvar</button>
+    <button ><a href="lista.html">Listar</a></button></br>
+    <label for id="sucesso"></label>
+       
+    <tbody>
 
-    <div>
-        <table id="lista">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Nome</th>
-                    <th>Descricao</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-
-        </table>
-    </div>
+    </tbody>
     <script src="Js/crud.js"></script>
+    <script>
+        window.onload = function(){
+            conversao();
+        }
+    </script>
 </body>
 </html>
